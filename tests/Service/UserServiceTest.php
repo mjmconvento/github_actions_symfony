@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class UserServiceTest extends TestCase
 {
 
-    public function testGetUser()
+    public function testGetUser(): void
     {
         $service = new UserService();
         self::assertSame("user", $service->getUser());
