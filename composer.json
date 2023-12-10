@@ -1,5 +1,7 @@
 {
     "type": "project",
+    "name": "mjmconvento/github_actions_symfony",
+    "description": "Testing of github actions using with Symfony",
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
