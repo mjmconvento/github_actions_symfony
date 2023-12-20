@@ -18,6 +18,9 @@ jobs:
         ports:
           - 3306:3306
     steps:
+      - name: Check php version
+        run: php -v
+
       - name: Check out repository code
         uses: actions/checkout@v4
 
