@@ -7,6 +7,16 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_DATABASE: konvoy-test
+          MYSQL_USER: user
+          MYSQL_PASSWORD: pass
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
+        ports:
+          - 3306:3306
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
