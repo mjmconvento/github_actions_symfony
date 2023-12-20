@@ -36,7 +36,7 @@ jobs:
         run: composer install
 
       - name: Run phpunit
-        run: vendor/bin/phpunit
+        run: composer run-phpunit
 
       - name: Run phpstan
         run: vendor/bin/phpstan analyse src tests
