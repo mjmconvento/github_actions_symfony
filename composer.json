@@ -69,7 +69,7 @@
             "@auto-scripts"
         ],
         "run-phpunit": [
-            "@putenv DATABASE_URL=mysql://user:pass@127.0.0.1/github_actions_symfony_test",
+            "@putenv DATABASE_URL=mysql://user:pass@127.0.0.1/github_actions_symfony",
             "bin/console doctrine:schema:drop --force",
             "bin/console doctrine:schema:update --force --complete",
             "bin/console doctrine:fixtures:load -n",
