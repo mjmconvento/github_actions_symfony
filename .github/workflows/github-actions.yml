@@ -24,8 +24,8 @@ jobs:
       - name: Composer Validate
         run: composer validate
 
-      - name: Composer Update
-        run: composer update --ignore-platform-reqs
+      - name: Composer Install
+        run: COMPOSER_MEMORY_LIMIT=-1 composer install --ignore-platform-reqs
 
       - name: Run phpunit
         run: vendor/bin/phpunit
