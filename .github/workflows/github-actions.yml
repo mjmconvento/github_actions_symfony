@@ -24,8 +24,8 @@ jobs:
       - name: Composer Validate
         run: composer validate
 
-      - name: Composer Install
-        run: composer install
+      - name: Composer Update
+        run: composer update --ignore-platform-reqs
 
       - name: Run phpunit
         run: vendor/bin/phpunit
